@@ -1,3 +1,14 @@
+<?php
+
+	$acao = 'recuperar';
+	require 'tarefa_controller.php';
+
+
+
+?>
+
+
+
 <html>
 	<head>
 		<meta charset="utf-8" />
