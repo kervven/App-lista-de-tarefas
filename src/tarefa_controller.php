@@ -1,7 +1,7 @@
 <?php
 
     require "Tarefa.php";
-    require "tarefa.service.php";
+    require "Tarefa.service.php";
     require "conexao.php";
 
     $acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
