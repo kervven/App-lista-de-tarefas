@@ -1,6 +1,6 @@
 <?php
 
-    require "tarefa.model.php";
+    require "Tarefa.php";
     require "tarefa.service.php";
     require "conexao.php";
 
