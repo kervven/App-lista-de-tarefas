@@ -16,7 +16,7 @@ class ConexaoTest extends TestCase
 
     public function testConexaoComParametrosIncorretos()
     {
-        // Modifique as credenciais para serem incorretas
+        
         $conexao = new Conexao();
         $conexao->setUser('usuario_incorreto');
         $conexao->setPass('senha_incorreta');
@@ -27,7 +27,7 @@ class ConexaoTest extends TestCase
 
     public function testConexaoComBancoDeDadosInexistente()
     {
-        // Modifique o nome do banco de dados para ser inexistente
+        
         $conexao = new Conexao();
         $conexao->setDbname('banco_de_dados_inexistente');
 

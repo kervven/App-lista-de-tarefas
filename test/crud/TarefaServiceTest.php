@@ -4,6 +4,7 @@
 use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/../../src/TarefaService.php';
+require_once __DIR__ . '/../../src/Conexao.php';
 
 class TarefaServiceTest extends TestCase
 {
@@ -48,7 +49,7 @@ class TarefaServiceTest extends TestCase
         // Faça outras asserções conforme necessário.
     }
 
-    // ...
+   
 
     public function testAtualizar()
     {

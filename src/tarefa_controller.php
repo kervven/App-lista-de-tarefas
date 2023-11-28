@@ -1,8 +1,8 @@
 <?php
 
     require "Tarefa.php";
-    require "Tarefa.service.php";
-    require "conexao.php";
+    require "TarefaService.php";
+    require "Conexao.php";
 
     $acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
@@ -15,7 +15,7 @@
         $tarefaService = new TarefaService($conexao, $tarefa);
         $tarefaService->inserir();
 
-        header('Location: nova_tarefa.php?inclusao=1');
+        header('Location: NovaTarefa.php?inclusao=1');
     } else if($acao == 'recuperar') {
 
         $tarefa = new Tarefa();
@@ -33,7 +33,7 @@
         $tarefaService = new TarefaService($conexao, $tarefa);
 
         if($tarefaService->atualizar()) {
-            header('location: todas_tarefas.php');
+            header('location: Todas_tarefas.php');
         }
 
     } else if($acao == 'remover') {
@@ -44,7 +44,7 @@
 
         $tarefaService = new TarefaService($conexao, $tarefa);
         $tarefaService->remover();
-        header('location: todas_tarefas.php');
+        header('location: Todas_tarefas.php');
 
 
     } else if($acao == 'marcarRealizada') {
@@ -56,6 +56,6 @@
 
         $tarefaService = new TarefaService($conexao, $tarefa);
         $tarefaService->marcarRealizada();
-        header('location: todas_tarefas.php');
+        header('location: Todas_tarefas.php');
     }
 ?>
