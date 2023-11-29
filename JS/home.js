@@ -68,14 +68,26 @@ themeToggler.addEventListener('click', () => {
 });
 
 
-
 function closeLoginPopup() {
     var loginPopup = document.getElementById('login-popup');
     loginPopup.style.display = 'none';
 }
 
-// Função para mostrar o pop-up de login quando o ícone de login for clicado
+function openSignupPopup() {
+    closeLoginPopup();
+    var signupPopup = document.getElementById('signup-popup');
+    signupPopup.style.display = 'block'; 
+}
+
+// Função para mostrar o pop-up de login
 document.getElementById('login-icon').addEventListener('click', function () {
     var loginPopup = document.getElementById('login-popup');
     loginPopup.style.display = 'block';
 });
+
+
+
+function closeSignupPopup() {
+    var loginPopup = document.getElementById('signup-popup');
+    loginPopup.style.display = 'none';
+}

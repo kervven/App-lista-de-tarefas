@@ -50,11 +50,38 @@
                 <label for="password">Senha:</label>
                 <input type="password" class="form-control" name="password" placeholder="Digite sua senha">
             </div>
+            <div class="signup-invite">
+                Não fez conta ainda? <span onclick="openSignupPopup()">Cadastre-se aqui</span>
+            </div>
             <button type="submit" class="btn btn-primary">Entrar</button>
         </form>
     </div>
 </div>
 
+<!-- Pop-up de Cadastro -->
+<div class="signup-popup" id="signup-popup">
+    <div class="signup-form">
+        <div class="close-icon" onclick="closeSignupPopup()">
+            <i class="fas fa-times"></i>
+        </div>
+        <h2>Cadastro</h2>
+        <form action="cadastro.php" method="post">
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" class="form-control" name="username" placeholder="Escolha um usuário">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" class="form-control" name="password" placeholder="Crie uma senha">
+            </div>
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </form>
+    </div>
+</div>
 
     <!--fim da section header-->
 
@@ -67,7 +94,7 @@
             <h3>TaskMaster</h3>
             <span>Sua solução em gestão de tarefas e produtividade.</span>
             <p>O TaskMaster é uma ferramenta inovadora que ajuda você a organizar suas tarefas diárias de forma eficiente. Com uma interface intuitiva e recursos poderosos, ele transforma a maneira como você gerencia seu tempo, aumentando sua produtividade e ajudando a alcançar seus objetivos com mais facilidade.</p>
-            <a href="" class="btn">Experimente agora</a>
+            <a onclick="openSignupPopup()" class="btn">Experimente agora</a>
             
         </div>
     </section>

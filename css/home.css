@@ -786,24 +786,22 @@ header .fa-bars {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2); 
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 2px 8px 0px;
 }
 
-
-
-
 .login-form button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
     border: none;
     padding: 10px 20px;
     border-radius: 7px;
     cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 3px 8px;
 }
 
 .login-form button:hover {
     background-color: #0056b3;
+    color: #fff;
 }
 
 
@@ -819,6 +817,78 @@ header .fa-bars {
 .close-icon:hover {
     color: #ff0000; 
 }
+
+.signup-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.signup-form {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.2); 
+}
+
+.signup-form h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 2px 8px 0px;
+}
+
+.signup-form button {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 3px 8px;
+}
+
+.signup-form button:hover {
+    background-color: rgb(36, 36, 241);
+    color: #fff;
+}
+
+.signup-invite {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signup-invite span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.signup-invite span:hover {
+    color: #0056b3;
+}
+
 
 
 /*media queries*/
