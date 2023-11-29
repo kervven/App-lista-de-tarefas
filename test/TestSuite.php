@@ -7,13 +7,13 @@ class AppTestSuite
     {
         $suite = new TestSuite('App Test Suite');
 
-     
         $suite->addTestSuite(TarefaServiceTest::class);
 
-       
         $suite->addTestSuite(NovaTarefaTest::class);
 
         $suite->addTestSuite(Conexao::class);
+
+        $suite->addTestSuite(LoginTest::class);
 
         return $suite;
     }
