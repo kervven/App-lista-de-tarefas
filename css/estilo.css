@@ -1,32 +1,36 @@
 .menu {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .app {
-	margin-top: 25px;
+  margin-top: 100px;
 }
 
 .pagina {
-	border:solid 1px #DFDFDF;
-	padding:25px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px !important;
+  height: 500px;
+  border-radius: 7px;
 }
 
 li.list-group-item.active {
-	background-color: #fff;
-	border-color: #009933;
-    border-left:solid 10px #009933;
+  background-color: #fff;
+  border-color: #009933;
+  border-left: solid 10px #009933;
 }
 
 li a {
-	color: #212529;
+  color: #212529;
 }
 
 li a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 h4 {
-	color: #009933 !important;
+  color: #009933 !important;
 }
 
-
+header {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

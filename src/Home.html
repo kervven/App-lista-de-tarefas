@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TaskMaster</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
@@ -34,54 +34,54 @@
         </div>
     </header>
 
-   <!-- Pop-up de Login -->
-   <div class="login-popup" id="login-popup">
-    <div class="login-form">
-        <div class="close-icon" onclick="closeLoginPopup()">
-            <i class="fas fa-times"></i>
+    <!-- Pop-up de Login -->
+    <div class="login-popup" id="login-popup">
+        <div class="login-form">
+            <div class="close-icon" onclick="closeLoginPopup()">
+                <i class="fas fa-times"></i>
+            </div>
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" class="form-control" name="username" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Digite sua senha">
+                </div>
+                <div class="signup-invite">
+                    Não fez conta ainda? <span onclick="openSignupPopup()">Cadastre-se aqui</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
         </div>
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <div class="form-group">
-                <label for="username">Usuário:</label>
-                <input type="text" class="form-control"  name="username" placeholder="Digite seu usuário">
-            </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" class="form-control" name="password" placeholder="Digite sua senha">
-            </div>
-            <div class="signup-invite">
-                Não fez conta ainda? <span onclick="openSignupPopup()">Cadastre-se aqui</span>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
     </div>
-</div>
 
-<!-- Pop-up de Cadastro -->
-<div class="signup-popup" id="signup-popup">
-    <div class="signup-form">
-        <div class="close-icon" onclick="closeSignupPopup()">
-            <i class="fas fa-times"></i>
+    <!-- Pop-up de Cadastro -->
+    <div class="signup-popup" id="signup-popup">
+        <div class="signup-form">
+            <div class="close-icon" onclick="closeSignupPopup()">
+                <i class="fas fa-times"></i>
+            </div>
+            <h2>Cadastro</h2>
+            <form action="cadastro.php" method="post">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" class="form-control" name="username" placeholder="Escolha um usuário">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Crie uma senha">
+                </div>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+            </form>
         </div>
-        <h2>Cadastro</h2>
-        <form action="cadastro.php" method="post">
-            <div class="form-group">
-                <label for="username">Usuário:</label>
-                <input type="text" class="form-control" name="username" placeholder="Escolha um usuário">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail">
-            </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" class="form-control" name="password" placeholder="Crie uma senha">
-            </div>
-            <button type="submit" class="btn btn-success">Cadastrar</button>
-        </form>
     </div>
-</div>
 
     <!--fim da section header-->
 
@@ -95,7 +95,7 @@
             <span>Sua solução em gestão de tarefas e produtividade.</span>
             <p>O TaskMaster é uma ferramenta inovadora que ajuda você a organizar suas tarefas diárias de forma eficiente. Com uma interface intuitiva e recursos poderosos, ele transforma a maneira como você gerencia seu tempo, aumentando sua produtividade e ajudando a alcançar seus objetivos com mais facilidade.</p>
             <a onclick="openSignupPopup()" class="btn">Experimente agora</a>
-            
+
         </div>
     </section>
 
@@ -165,54 +165,54 @@
         </div>
     </section>
 
-  <!--INICIO DOS ICONES-->
-  <h1 class="heading"> Tecnologias <span>Utilizadas</span> </h1>
-  <section class="icons-container">
+    <!--INICIO DOS ICONES-->
+    <h1 class="heading"> Tecnologias <span>Utilizadas</span> </h1>
+    <section class="icons-container">
 
-      <div class="icons">
-          <img src="/img/icon-5.png" alt="PHP">
-          <div class="info">
-              <h3>PHP</h3>
-              <span>Back-end</span>
-          </div>
-      </div>
+        <div class="icons">
+            <img src="/img/icon-5.png" alt="PHP">
+            <div class="info">
+                <h3>PHP</h3>
+                <span>Back-end</span>
+            </div>
+        </div>
 
-      <div class="icons">
-          <img src="/img/icon-4.png" alt="HTML">
-          <div class="info">
-              <h3>HTML</h3>
-              <span>Estrutura da página</span>
-          </div>
-      </div>
+        <div class="icons">
+            <img src="/img/icon-4.png" alt="HTML">
+            <div class="info">
+                <h3>HTML</h3>
+                <span>Estrutura da página</span>
+            </div>
+        </div>
 
-      <div class="icons">
-          <img src="/img/icon-3.png" alt="CSS">
-          <div class="info">
-              <h3>CSS</h3>
-              <span>Estilo visual</span>
-          </div>
-      </div>
+        <div class="icons">
+            <img src="/img/icon-3.png" alt="CSS">
+            <div class="info">
+                <h3>CSS</h3>
+                <span>Estilo visual</span>
+            </div>
+        </div>
 
-      <div class="icons">
-          <img src="/img/icon-2.png" alt="JavaScript">
-          <div class="info">
-              <h3>JavaScript</h3>
-              <span>Interatividade</span>
-          </div>
-      </div>
+        <div class="icons">
+            <img src="/img/icon-2.png" alt="JavaScript">
+            <div class="info">
+                <h3>JavaScript</h3>
+                <span>Interatividade</span>
+            </div>
+        </div>
 
-      <div class="icons">
-          <img src="/img/icon-1.png" alt="Bootstrap">
-          <div class="info">
-              <h3>Bootstrap</h3>
-              <span>Design responsivo</span>
-          </div>
-      </div>
+        <div class="icons">
+            <img src="/img/icon-1.png" alt="Bootstrap">
+            <div class="info">
+                <h3>Bootstrap</h3>
+                <span>Design responsivo</span>
+            </div>
+        </div>
 
-  </section>
+    </section>
 
 
-  <!--FIM DOS ICONES-->
+    <!--FIM DOS ICONES-->
     <!--FIM DOS PRODUTOS-->
     <!--INICIO DOS CRIADORES-->
 
@@ -237,8 +237,7 @@
 
 
                 <div class="swiper-slide slide">
-                    <img
-                        src="img/puzzled-man-look-with-clueless-expression-looks-doubtfully-can-t-make-decision-dressed-casual-clothes-isolated-white-wall.jpg">
+                    <img src="img/puzzled-man-look-with-clueless-expression-looks-doubtfully-can-t-make-decision-dressed-casual-clothes-isolated-white-wall.jpg">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>
