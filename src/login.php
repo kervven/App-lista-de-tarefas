@@ -1,26 +1,28 @@
 <?php
+require_once('conexao.php');
+
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
-    $password = $_POST["password"];
+    $senha = $_POST["password"];
 
-    if (empty($username) || empty($password)) {
+    if (empty($username) || empty($senha)) {
         echo "Por favor, preencha todos os campos.";
     } else {
         try {
             $conexao = (new Conexao())->conectar();
 
             // Consulta SQL para verificar o login
-            $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
+            $sql = "SELECT * FROM usuarios WHERE username = :username AND password = :password";
             $stmt = $conexao->prepare($sql);
             $stmt->bindParam(":username", $username);
-            $stmt->bindParam(":password", $password);
+            $stmt->bindParam(":password", $senha);
             $stmt->execute();
 
             if ($stmt->rowCount() == 1) {
                 $_SESSION["username"] = $username;
-                header("Location: tarefa.php");
+                header("Location: app.php");
                 exit();
             } else {
                 echo "Login falhou. Verifique suas credenciais.";
@@ -30,6 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 } else {
-    header("Location: login.html");
+    header("Location: Home.php");
 }
 ?>

@@ -185,7 +185,7 @@ header .fa-bars {
 
 .dark-theme .home {
   min-height: 100vh;
-  background: url(/img/fundo-de-estilo-de-papel-preto-3d-moderno.jpg) no-repeat;
+  background: url(../img/fundo-de-estilo-de-papel-preto-3d-moderno.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -370,7 +370,7 @@ header .fa-bars {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url(/img/3245109.jpg) no-repeat;
+  background: url(../img/3245109.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }

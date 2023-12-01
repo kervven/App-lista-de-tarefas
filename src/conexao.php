@@ -5,7 +5,7 @@
         private $host = 'localhost';
         private $dbname = 'lista_de_tarefas';
         private $user = 'root';
-        private $pass = '';
+        private $pass = 'super#2022.2';
 
         public function conectar() {
             try {

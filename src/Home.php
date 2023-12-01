@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskMaster</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="..\css\home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -108,7 +108,7 @@
         <div class="row">
 
             <div class="video-container">
-                <video src="/img/about-vid2.mp4" loop autoplay muted></video>
+                <video src="..\img\about-vid2.mp4" loop autoplay muted></video>
             </div>
 
             <div class="content">
@@ -136,7 +136,7 @@
 
             <div class="diferenciais">
                 <div class="box-diferenciais">
-                    <img src="/img/icon1.svg" />
+                    <img src="../img/icon1.svg" />
                     <h3>Organização e Produtividade</h3>
                     <p>Com o TaskMaster, gerencie suas tarefas e projetos de forma eficiente. Nossa interface intuitiva
                         permite que você planeje seu dia com facilidade, aumentando sua produtividade.</p>
@@ -145,7 +145,7 @@
 
             <div class="diferenciais">
                 <div class="box-diferenciais">
-                    <img src="/img/icon2.svg" />
+                    <img src="../img/icon2.svg" />
                     <h3>Facilidade e Flexibilidade</h3>
                     <p>O TaskMaster se adapta ao seu estilo de trabalho. Com ferramentas flexíveis, você pode
                         personalizar o app para atender às suas necessidades, tornando o gerenciamento de tarefas mais
@@ -155,7 +155,7 @@
 
             <div class="diferenciais">
                 <div class="box-diferenciais">
-                    <img src="/img/icon3.svg" />
+                    <img src="../img/icon3.svg" />
                     <h3>Suporte e Confiabilidade</h3>
                     <p>Nossa equipe está sempre disponível para ajudá-lo. Com o TaskMaster, você tem a garantia de um
                         app confiável e um suporte dedicado para auxiliá-lo em todas as suas necessidades.</p>
@@ -170,7 +170,7 @@
     <section class="icons-container">
 
         <div class="icons">
-            <img src="/img/icon-5.png" alt="PHP">
+            <img src="../img/icon-5.png" alt="PHP">
             <div class="info">
                 <h3>PHP</h3>
                 <span>Back-end</span>
@@ -178,7 +178,7 @@
         </div>
 
         <div class="icons">
-            <img src="/img/icon-4.png" alt="HTML">
+            <img src="../img/icon-4.png" alt="HTML">
             <div class="info">
                 <h3>HTML</h3>
                 <span>Estrutura da página</span>
@@ -186,7 +186,7 @@
         </div>
 
         <div class="icons">
-            <img src="/img/icon-3.png" alt="CSS">
+            <img src="../img/icon-3.png" alt="CSS">
             <div class="info">
                 <h3>CSS</h3>
                 <span>Estilo visual</span>
@@ -194,7 +194,7 @@
         </div>
 
         <div class="icons">
-            <img src="/img/icon-2.png" alt="JavaScript">
+            <img src="../img/icon-2.png" alt="JavaScript">
             <div class="info">
                 <h3>JavaScript</h3>
                 <span>Interatividade</span>
@@ -202,7 +202,7 @@
         </div>
 
         <div class="icons">
-            <img src="/img/icon-1.png" alt="Bootstrap">
+            <img src="../img/icon-1.png" alt="Bootstrap">
             <div class="info">
                 <h3>Bootstrap</h3>
                 <span>Design responsivo</span>
@@ -301,7 +301,7 @@
                 <p>O TaskMaster mudou a maneira como organizo meu dia. É incrivelmente fácil de usar e me ajuda
                     a ficar em dia com todas as minhas tarefas!</p>
                 <div class="user">
-                    <img src="/img/pic-1.jpg" alt="Foto de Anne">
+                    <img src="../img/pic-1.jpg" alt="Foto de Anne">
                     <div class="user-info">
                         <h3>Anne</h3>
                         <span>cliente satisfeita</span>
@@ -322,7 +322,7 @@
                 <p>O TaskMaster mudou a maneira como organizo meu dia. É incrivelmente fácil de usar e me ajuda
                     a ficar em dia com todas as minhas tarefas!</p>
                 <div class="user">
-                    <img src="/img/pic-2.jpg" alt="Foto de Carlos">
+                    <img src="../img/pic-2.jpg" alt="Foto de Carlos">
                     <div class="user-info">
                         <h3>Karla</h3>
                         <span>cliente satisfeito</span>
@@ -343,7 +343,7 @@
                 <p>TaskMaster é uma ferramenta essencial para mim agora. A forma como organiza as tarefas é
                     perfeita e o lembrete de tarefas pendentes é super útil.</p>
                 <div class="user">
-                    <img src="/img/pic-3.jpg" alt="Foto de Maria">
+                    <img src="../img/pic-3.jpg" alt="Foto de Maria">
                     <div class="user-info">
                         <h3>Maria</h3>
                         <span>cliente satisfeita</span>
@@ -374,7 +374,7 @@
                 <input type="submit" value="send message" class="btn" id="btn">
             </form>
             <div class="image">
-                <img src="/img/contact-img.svg" alt="">
+                <img src="../img/contact-img.svg" alt="">
             </div>
         </div>
     </section>
@@ -390,7 +390,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="/JS/home.js"></script>
+    <script src="..\JS\home.js"></script>
 
 
 </body>
