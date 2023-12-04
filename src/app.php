@@ -97,7 +97,7 @@ require_once('obterUsername.php');
 						// Se o usuário estiver logado, exibe o nome de usuário
 						$conexao = new Conexao();
 						$username = obterUsername($conexao, $_SESSION['username']);
-						echo '<a href="">' . $username . '</a>';
+						echo '<a style="text-decoration: none; color: #222; font-weight: bold;">' . $username . '</a>';
 					} else {
 						// Caso contrário, exibe um link para o login
 						echo '<a href="login.php">Login</a>';

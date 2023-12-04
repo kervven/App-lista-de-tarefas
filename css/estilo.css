@@ -1,5 +1,6 @@
 .menu {
   margin-bottom: 25px;
+  
 }
 
 .app {
@@ -17,6 +18,7 @@ li.list-group-item.active {
   background-color: #fff;
   border-color: #009933;
   border-left: solid 10px #009933;
+  font-weight: bold;
 }
 
 li a {

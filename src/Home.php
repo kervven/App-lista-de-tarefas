@@ -363,7 +363,7 @@
     <!--INICIO DOS CONTATOS-->
     <section class="contact" id="contact">
 
-        <h1 class="heading"> <span> contact </span> us</h1>
+        <h1 class="heading"> <span> Fale </span> Conosco</h1>
 
         <div class="row">
             <form id="myForm">
