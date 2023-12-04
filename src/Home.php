@@ -94,7 +94,7 @@
             <h3>TaskMaster</h3>
             <span>Sua solução em gestão de tarefas e produtividade.</span>
             <p>O TaskMaster é uma ferramenta inovadora que ajuda você a organizar suas tarefas diárias de forma eficiente. Com uma interface intuitiva e recursos poderosos, ele transforma a maneira como você gerencia seu tempo, aumentando sua produtividade e ajudando a alcançar seus objetivos com mais facilidade.</p>
-            <a onclick="openSignupPopup()" class="btn">Experimente agora</a>
+            <a onclick="openSignupPopup()" class="btn">Cadastre-se</a>
 
         </div>
     </section>

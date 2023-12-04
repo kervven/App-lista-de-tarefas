@@ -47,7 +47,7 @@ require_once('obterUsername.php');
 		<div class="bg-success pt-2 text-white d-flex justify-content-center">
 			<h5>Tarefa inserida com sucesso</h5>
 		</div>
-		<?php } ?>;
+		<?php } ?>
 
 		<div class="container app">
 			<div class="row">

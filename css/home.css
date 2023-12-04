@@ -357,6 +357,29 @@ header .fa-bars {
   color: #f6f6f9;
 }
 
+.dark-theme .login-form{
+  background-color: #1d1d1d;
+}
+
+.dark-theme .login-form label , .dark-theme .login-form h2 , .dark-theme .login-form button{
+  color: #f5f5f5;
+}
+
+.dark-theme .signup-form{
+  background-color: #1d1d1d;
+}
+
+.dark-theme .signup-form  label , .dark-theme .signup-form  h2 , .dark-theme .signup-form  button{
+  color: #f5f5f5;
+}
+
+
+.dark-theme .signup-invite{
+  color: #f5f5f5;
+}
+.dark-theme .close-icon{
+  color: #f5f5f5;
+}
 .dark-theme .swiper-pagination-bullet {
   background-color: #f6f6f9 !important;
 }

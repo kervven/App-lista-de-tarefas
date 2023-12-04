@@ -12,6 +12,7 @@
   padding: 30px !important;
   height: 500px;
   border-radius: 7px;
+  background-color: #fff;
 }
 
 li.list-group-item.active {
@@ -36,3 +37,4 @@ h4 {
 header {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
 }
+
