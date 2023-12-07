@@ -225,7 +225,7 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide slide">
-                    <img src="img/entrepreneur-g7ae091a2e_1920.jpg">
+                    <img src="../img/marcos.jpg">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -237,7 +237,7 @@
 
 
                 <div class="swiper-slide slide">
-                    <img src="img/puzzled-man-look-with-clueless-expression-looks-doubtfully-can-t-make-decision-dressed-casual-clothes-isolated-white-wall.jpg">
+                    <img src="../img/davi.jpeg">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -249,19 +249,19 @@
 
 
                 <div class="swiper-slide slide">
-                    <img src="img/woman-gef96c669b_1920.jpg">
+                    <img src="../img/kerven.jpeg">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-instagram"></a>
                         <a href="#" class="fab fa-linkedin"></a>
                     </div>
-                    <h3>Kerven</h3>
+                    <h3>Kerven Kildhery</h3>
                 </div>
 
 
                 <div class="swiper-slide slide">
-                    <img src="img/portrait-g2c85eb5a3_1920.jpg">
+                    <img src="img/jean.jpg">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>

@@ -40,7 +40,7 @@ var swiper = new Swiper(".teachers-slider", {
     breakpoints: {
         540: {
             slidesPerView: 1,
-            slidesPerGroup: 1 // Para garantir que apenas um slide passe de cada vez em telas pequenas
+            slidesPerGroup: 1
         },
         768: {
             slidesPerView: 2,
