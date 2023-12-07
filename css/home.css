@@ -714,10 +714,11 @@ header .fa-bars {
 }
 
 .teachers .slide img {
-  height: 65rem;
+  height: 100rem;
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  margin-left: 2rem;
 }
 
 .teachers .slide h3 {
@@ -734,7 +735,7 @@ header .fa-bars {
 }
 
 .teachers .slide:hover .share {
-  left: 2rem;
+  left: 5rem;
 }
 
 .teachers .slide .share a {
