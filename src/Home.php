@@ -261,7 +261,7 @@
 
 
                 <div class="swiper-slide slide">
-                    <img src="img/jean.jpg">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQGdb_aYrYVK1w/profile-displayphoto-shrink_800_800/0/1678224832394?e=1707350400&v=beta&t=P4Sq1W-gOYgRn1ju_tLx6IquC2qhDv3Ci5YWjOuvukw">
                     <div class="share">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-twitter"></a>

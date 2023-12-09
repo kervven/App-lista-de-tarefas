@@ -27,22 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $sql = "INSERT INTO usuarios (username, password, email) VALUES (:username, :password, :email)";
                 $stmt = $conexao->prepare($sql);
 
-
                 $stmt->bindParam(":username", $username);
                 $stmt->bindParam(":password", $senha);
                 $stmt->bindParam(":email", $email);
 
                 $stmt->execute();
 
-                echo "Cadastro realizado com sucesso!";
-                header("Location: Home.php");
+                echo '<script>';
+                echo 'alert("Cadastro realizado com sucesso!");';
+                echo 'setTimeout(function(){ window.location.href = "Home.php"; }, 150);';  
+                echo '</script>';
             }
         } catch (PDOException $e) {
             echo "Erro de banco de dados: " . $e->getMessage();
         }
     }
 } else {
-    
-    header("Location: Home.html");
+    header("Location: 404.html");
 }
 ?>

@@ -5,6 +5,8 @@ require 'tarefa_controller.php';
 
 session_start();
 
+
+
 require_once('conexao.php');
 require_once('obterUsername.php');
 
@@ -21,9 +23,12 @@ require_once('obterUsername.php');
 	<title>App Lista Tarefas</title>
 
 	<link rel="stylesheet" href="..\css\estilo.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-/rXcKAW8UmN5dSNOZZu6RvSiaAqd3EXyt2bEGi7fiq0jI2lnQ+Ay+5H/wIqE5KZJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoWjFIm5zXpV" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script>
 		function editar(id, txt_tarefa) {
 
@@ -86,28 +91,34 @@ require_once('obterUsername.php');
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="Home.php">
-					<img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-					App Lista Tarefas
-
-					<?php
-					if (isset($_SESSION['username'])) {
-						// Se o usuário estiver logado, exibe o nome de usuário
-						$conexao = new Conexao();
-						$username = obterUsername($conexao, $_SESSION['username']);
-						echo '<a style="text-decoration: none; color: #222; font-weight: bold;">' . $username . '</a>';
-					} else {
-						// Caso contrário, exibe um link para o login
-						echo '<a href="login.php">Login</a>';
-					}
-					?>
-				</a>
-			</div>
-		</nav>
-	</header>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="Home.php">
+                <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              TaskMaster
+            </a>
+            <?php
+            if (isset($_SESSION['username'])) {
+        
+                $conexao = new Conexao();
+                $username = obterUsername($conexao, $_SESSION['username']);
+                echo '<div class="dropdown">';
+                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                echo $username;
+                echo '</a>';
+                echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';
+                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-item" href="#" onclick="logout()">Logout</a>';
+                echo '</div>';
+                echo '</div>';
+            } else {
+                // Caso contrário, exibe um link para o login
+                echo '<a href="login.php">Login</a>';
+            }
+            ?>
+        </div>
+    </nav>
+</header>
 
 
 	<div class="container app">
@@ -152,6 +163,24 @@ require_once('obterUsername.php');
 			</div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script>
+		function logout() {
+			Swal.fire({
+				title: 'Deseja realmente sair?',
+				icon: 'question',
+				showCancelButton: true,
+				confirmButtonText: 'Sim',
+				cancelButtonText: 'Não'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					// Faça o logout e redirecione para home.php
+					window.location.href = 'Home.php';
+				}
+			});
+		}
+	</script>
+
 </body>
 
 </html>
