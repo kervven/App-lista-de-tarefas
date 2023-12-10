@@ -13,8 +13,6 @@ require_once('obterUsername.php');
 
 ?>
 
-<html>
-
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,7 +101,7 @@ require_once('obterUsername.php');
                 $conexao = new Conexao();
                 $username = obterUsername($conexao, $_SESSION['username']);
                 echo '<div class="dropdown">';
-                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bem-vindo, ';
                 echo $username;
                 echo '</a>';
                 echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';

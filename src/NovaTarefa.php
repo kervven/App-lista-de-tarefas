@@ -38,7 +38,7 @@ require_once('obterUsername.php');
                 $conexao = new Conexao();
                 $username = obterUsername($conexao, $_SESSION['username']);
                 echo '<div class="dropdown">';
-                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bem-vindo, ';
                 echo $username;
                 echo '</a>';
                 echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';
@@ -65,7 +65,7 @@ require_once('obterUsername.php');
 				<div class="col-md-3 menu">
 					<ul class="list-group">
 						<li class="list-group-item"><a href="app.php">Tarefas pendentes</a></li>
-						<li class="list-group-item active"><a href="nova_tarefa.php">Nova tarefa</a></li>
+						<li class="list-group-item active"><a href="NovaTarefa.php">Nova tarefa</a></li>
 						<li class="list-group-item"><a href="todas_tarefas.php">Todas tarefas</a></li>
 					</ul>
 				</div>
