@@ -111,8 +111,8 @@ require_once('obterUsername.php');
                 echo '</div>';
                 echo '</div>';
             } else {
-                // Caso contrário, exibe um link para o login
-                echo '<a href="login.php">Login</a>';
+				header("Location: 404.php");
+				exit();
             }
             ?>
         </div>

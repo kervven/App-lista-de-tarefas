@@ -108,9 +108,9 @@ require_once('obterUsername.php');
                 echo '<a style="text-decoration: none; color: #222; font-weight: bold;" class="dropdown-item" href="#" onclick="logout()">Logout</a>';
                 echo '</div>';
                 echo '</div>';
-            } else {
-               
-                echo '<a href="login.php">Login</a>';
+			} else {
+				header("Location: 404.php");
+				exit();
             }
             ?>
         </div>

@@ -478,6 +478,11 @@ header .fa-bars {
   flex: 1 1 20rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.icons-container .icons:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
 
 .icons-container .icons img {
   width: 8.5rem;
