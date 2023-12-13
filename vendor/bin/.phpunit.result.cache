@@ -1,0 +1,1 @@
+{"version":1,"defects":{"CadastroUsuarioTest::testCadastroUsuarioExistente":7,"CadastroUsuarioTest::testCadastroUsuarioSucesso":7},"times":{"CadastroUsuarioTest::testCadastroUsuarioSucesso":0.052,"CadastroUsuarioTest::testCadastroUsuarioExistente":0.004}}

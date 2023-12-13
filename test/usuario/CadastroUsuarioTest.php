@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once('test\srccadastro.php');
+require_once __DIR__ . '/../../src/cadastro.php';
 
 class CadastroUsuarioTest extends TestCase
 {
