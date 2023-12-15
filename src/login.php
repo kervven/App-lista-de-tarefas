@@ -1,6 +1,5 @@
 <?php
 require_once('conexao.php');
-
 require_once('conexao.php');
 
 class LoginUsuario
@@ -24,7 +23,17 @@ class LoginUsuario
             if ($stmt->rowCount() == 1) {
                 return "Login realizado com sucesso!";
             } else {
-                return "Login falhou. Verifique suas credenciais.";
+                // Verificar se o usuário existe
+                $sql = "SELECT id FROM usuarios WHERE username = :username";
+                $stmt = $conexao->prepare($sql);
+                $stmt->bindParam(":username", $username);
+                $stmt->execute();
+
+                if ($stmt->rowCount() > 0) {
+                    return "Login falhou. Senha incorreta.";
+                } else {
+                    return "Usuário não encontrado";
+                }
             }
         } catch (PDOException $e) {
             return "Erro de banco de dados: " . $e->getMessage();
