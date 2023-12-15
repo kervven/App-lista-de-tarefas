@@ -15,7 +15,7 @@ class LoginUsuarioTest extends TestCase
     public function testAutenticacaoSucesso()
     {
         $loginUsuario = new LoginUsuario();
-        $resultado = $loginUsuario->autenticarUsuario('UsuarioExistente', 'Senha456');
+        $resultado = $loginUsuario->autenticarUsuario('NovoUsuario', 'Senha123');
         $this->assertEquals("Login realizado com sucesso!", $resultado);
     }
 
