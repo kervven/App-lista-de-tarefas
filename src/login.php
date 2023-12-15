@@ -1,15 +1,10 @@
 <?php
 require_once('conexao.php');
 
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $senha = $_POST["password"];
-
-    if (empty($username) || empty($senha)) {
-        echo "Por favor, preencha todos os campos.";
-    } else {
+class LoginUsuario
+{
+    public function autenticarUsuario($username, $senha)
+    {
         try {
             $conexao = (new Conexao())->conectar();
 
@@ -21,14 +16,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->execute();
 
             if ($stmt->rowCount() == 1) {
-                $_SESSION["username"] = $username;
-                header("Location: app.php");
-                exit();
+                return "Login realizado com sucesso!";
             } else {
-                echo "Login falhou. Verifique suas credenciais.";
+                return "Login falhou. Verifique suas credenciais.";
             }
         } catch (PDOException $e) {
-            echo "Erro de banco de dados: " . $e->getMessage();
+            return "Erro de banco de dados: " . $e->getMessage();
+        }
+    }
+}
+
+// Uso do código para autenticar um usuário
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $senha = $_POST["password"];
+
+    if (empty($username) || empty($senha)) {
+        echo "Por favor, preencha todos os campos.";
+    } else {
+        $loginUsuario = new LoginUsuario();
+        $resultado = $loginUsuario->autenticarUsuario($username, $senha);
+
+        echo $resultado;
+
+        if ($resultado === "Login realizado com sucesso!") {
+            $_SESSION["username"] = $username;
+            header("Location: app.php");
+            exit();
         }
     }
 } else {
