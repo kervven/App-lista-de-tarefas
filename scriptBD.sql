@@ -1,3 +1,5 @@
+create database lista_de_tarefas
+
 create table tb_status(
 	id int not null primary key auto_increment,
     status varchar(25) not null
