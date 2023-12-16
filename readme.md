@@ -58,7 +58,8 @@ Certifique-se de ter os seguintes requisitos instalados antes de prosseguir:
 ## Instruções para Executar os Testes
  
 **Versão do PHP:** 8.0 ou superior
-1. Execute esse comando vendor/bin/phpunit test
+1. composer install
+2. Execute esse comando vendor/bin/phpunit test
 
 
 ## Licença
